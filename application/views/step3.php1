@@ -1,0 +1,312 @@
+<style>
+    .front {background: url('<?php echo base_url(); ?>outer_new_1.png') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height:372px; }
+    #goldencoin { display: none;}
+    .back img { width:376px; height:376px; }
+</style>
+<?php
+if(isset($_GET['qty']) && $_GET['qty'] == '0' ){
+    ?>
+<script> alert('Total quantity in your cart cross the 990, Please enter the less quantity to proceed'); </script>
+<?php 
+}
+?>
+
+<div class="container white">
+    <ul class="steps">
+        <li><a href="#">step1</a><span></span></li>
+        <li class="second"><a href="#">step2</a><span></span></li>
+        <li class="active"><a href="#">step3</a><span></span></li>
+    </ul>
+    <div class="clearfix"></div>
+    <div class="leftcont">
+        <div class="glossymenu">
+            <a href="" class="menuitem submenuheader  active" headerindex="0h">Step 1: Upload your photo</a>
+            <div class="submenu first1 band" contentindex="0c" style="display: block;">
+                <h4>Upload Photo</h4>
+                <p>Accepted formats: JPG,GIF or PNG</p>
+                <input type="file" data-buttontext="" data-input="false" data-classbutton="btn btn-primary" class="filestyle" id="filestyle-0" style="position: fixed; left: -9999px;" tabindex="-1"><div style="display: inline;" class="bootstrap-filestyle" tabindex="0"><label class="btn btn-primary" for="filestyle-0"><i class=" icon-white icon-folder-open"></i> <span></span></label></div>
+                <a class="fb" href=""></a>
+                <a class="insta" href=""></a>
+                <div class="clearfix"></div>
+                <p class="context">Upload  your photo from your computer or import a photo
+                    from Facebook or instagram. Your photo will appear on the
+                    front of the U.S.JFK Half Dollar with the
+                    design you choose!</p>
+                <div class="clearfix"></div>
+            </div>
+            <a href="" class="menuitem submenuheader" headerindex="1h">Step 2: Design your coin</a>
+        <a href="javascript:;" class="menuitem submenuheader" headerindex="2h">Step 3: Approve your design</a>            <div class="submenu third1 open" contentindex="2c" style="display: none;">
+                <form action=" <?php // echo base_url();?>personalizedcoin/addtocart/" method="post" onsubmit="return validateForm()">
+                <div class="addtext">
+                   <h4>Coin Quantity</h4>
+<!--                    
+                    <input type="text" name="coinquantity"  id="coinquantity" placeholder="Enter value between 1 to 990" required class="theme" value="0">
+                    <div class="incdec">
+                    <a onclick="doIt(1); return false;"  class="inc" href="#"><img src="<?php //echo base_url(); ?>assets/img/increment.png"></a>
+                                    <a onclick="doIt(-1); return false;" class="dec" href="#"><img src="<?php// echo base_url(); ?>assets/img/decrement.png"></a>
+                    </div>-->
+
+<div class="incdec">
+                                    <input type="text" value="1" name="coinquantity"  id="coinquantity"  >
+                                    <a onclick="doIt(1); return false;"  class="inc" href="#"><img src="<?php echo base_url(); ?>assets/img/increment.png"></a>
+                                    <a onclick="doIt(-1); return false;" class="dec" href="#"><img src="<?php echo base_url(); ?>assets/img/decrement.png"></a>
+                                </div>
+<!--                    <select class="theme" name="coinquantity">
+                        <?php
+//                        for ($i = 1; $i <= 90; $i++) {
+//                            echo " <option value='$i'>$i</option>";
+//                        }
+                        ?>                                                
+                    </select> -->
+                </div>
+                <div class="twocol text-center">
+<!--                    <div class="pull-left box">
+                        <h4>Premium Metal Felt Gift Display Box $3.95 each box</h4>
+                        <select class="theme" name="metalboxquantity">
+                            <?php
+                            //for ($i = 0; $i <= 90; $i++) {
+                                //echo " <option value='$i'>$i</option>";
+                            //}
+                            ?>                                              
+                        </select> 
+                    </div>-->
+<img src="<?php echo base_url(); ?>assets/img/goldplate.png">
+<!--                    <div class="sample pull-right">
+                        <img src="<?php //echo base_url(); ?>assets/img/sample.png">
+                    </div>                -->
+                </div>
+                <label class="chklbl">
+                    <input type="checkbox" name="goldplated"  id="goldplated"> <p class="sp">
+<!--                    Have your coin(s) entirely  plated in <span>Genuine 24KT Gold</span> $4.95 each coin-->
+                    Add <span> Genuine 24KT Gold </span> Plating to your entire order @ $2.95 per coin
+                    </p>
+                </label>
+
+
+                <div class="text-center  created"><h4><em>Coin will be created as shown.</em></h4></div> 
+
+
+                <label class="chklbl">
+                    <input type="checkbox" name="tandc" id="tandc"> <p>I have read and accept the <a href="<?php echo base_url(); ?>termandcondition">Terms &amp; Conditions.</a> </p>
+                </label>
+
+
+
+                <label class="chklbl">
+                    <input type="checkbox" name="designapprove" id="designapprove"> <p style="text-decoration: underline;">I approve my design. I own the copyright for these photo(s) or I am authorized by the owner to make a photo-to-coin reproduction.</p>
+                </label>
+
+
+                <input type="submit" class="addtocart" value="" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                <div class="clearfix"></div>
+            </form>
+            </div> 
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="rightcont">
+
+
+        <div class="wrapper">
+            <div class="row">
+
+                <div class="realtive setheight"> 	
+
+                    <div class="front inpreview">
+
+                        <img alt="" src="<?php echo $this->session->userdata('finalcoin'); ?>">
+
+                    </div>
+
+
+                    <div class="back inpreview" style="padding-left: -5px;">
+
+ <img alt="" src="<?php echo base_url(); ?>assets/img/back.jpg" style="height: 370px;width: 370px;" id="coinback">
+
+
+                    </div>
+
+                </div>
+
+            </div>
+ <div class="row" id="goldencoin">
+
+                <div class="col-md-12 inpreview atbottom">
+
+                   
+                    <p> Note: Clicking this option, all coins will be gold. </p>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-12 inpreview atbottom">
+
+                    <h4>Design will appear on front of JFK Half Dollar</h4>
+                    <p> Coin Diameter: 1.20 in. (30.6 mm) </p>
+
+                </div>
+
+            </div>
+
+            <div class="row">	
+                <div class="col-md-6 rightnext text-left">
+                    <a class="backstep" href="<?php echo base_url(); ?>personalizedcoin/step2"></a> <h3 class="pull-left">Back</h3>    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function validateForm()
+    {
+if($("#tandc").prop('checked') == false){
+    alert("Kindly read the and accept Term and conditions");
+    return false;
+}
+if($("#designapprove").prop('checked') == false){
+    alert("Kindly approve your design ");
+    return false;
+}
+    }
+    $('#goldplated').click(function() {
+        if ($(this).is(':checked')) {
+           var data = '<?php echo base_url(); ?>back_gold.jpg';
+           var data_front= '<?php echo base_url();?>con_front_gold.png';
+            $('.inpreview img').css( "margin-left", "1px" );
+           $('.inpreview img').css( "margin-top", "-4px" );
+           $('#goldencoin').css( "display", "none" );
+           
+        }else { 
+            var data_front= '<?php echo base_url();?>outer_new_1.png';
+        var data= '<?php echo base_url(); ?>assets/img/back.jpg';
+        $('.inpreview img').css( "margin-left", "-1px" );
+           $('.inpreview img').css( "margin-top", "-2px" );
+           $('#goldencoin').css( "display", "none" );
+        }
+        $('.front').css("background", "url(" + data_front + ")");
+        $('.front').css( "background-repeat", "no-repeat" );
+        $("#coinback").attr('src', data);
+    });
+    function doIt(toAdd, textbox) {
+        var textBox = document.getElementById(coinquantity);
+        var number = parseInt(coinquantity.value);
+        if (number + toAdd == 0 || number + toAdd > 990 )
+        {
+            return false;
+        } else {
+            coinquantity.value = number + toAdd;
+        }
+    }
+    </script>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog model_top">
+    <div class="modal-content model_2">
+      <div class="modal-header">
+           <h2 class="modal-title" id="myModalLabel">Add a High Quality Premium display box to your order </h2>
+        <p>These premium coin boxes are made out of metal and wrapped in soft plush left. </p>
+        <p>It is a terrific way to display your personalized coin,perfect your coin, or to give the coin as a gift.   </p>
+        <h4>5 Different Size Available :<h4>
+      </div>
+      <div class="modal-body boxes">
+          <div class="row col-md-2">
+              <div class="box1">
+                   <img src='<?php echo base_url();?>assets/img/one_box.png' >
+              </div>
+              <h5>Single Coin Box</h5>
+              <p>Box Hold 1JFK
+              <br/>
+              Half Dollar
+              <br/>
+              $3.95 each</p>
+              <select class='col-md-12'>
+        <option>0</option>
+              </select>
+          </div>
+                 <div class="row col-md-2">
+              <div class="box1">
+                   <img src='<?php echo base_url();?>assets/img/two_box.png' >
+              </div>
+              <h5>Two Coin Box</h5>
+              <p>Box Hold 1JFK
+              <br/>
+              Half Dollar
+              <br/>
+              $3.95 each</p>
+              <select class='col-md-12'>
+                  <option>0</option>
+              </select>
+          </div>
+                 <div class="row col-md-2">
+              <div class="box1">
+                   <img src='<?php echo base_url();?>assets/img/three_box.png' >
+              </div>
+              <h5>Three Coin Box</h5>
+              <p>Box Hold 1JFK
+              <br/>
+              Half Dollar
+              <br/>
+              $3.95 each</p>
+              <select class='col-md-12'>
+                  <option>0</option>
+              </select>
+          </div>
+                 <div class="row col-md-2">
+              <div class="box1">
+                   <img src='<?php echo base_url();?>assets/img/four_box.png' >
+                     
+                  
+              </div>
+              
+              <h5>Eight Coin Box</h5>
+              <p>Box Hold 1JFK
+              <br/>
+              Half Dollar
+              <br/>
+              $3.95 each</p>
+              <select class='col-md-12'>
+                  <option>0</option>
+              </select>
+          </div>
+                 <div class="row col-md-2">
+              <div class="box1">
+                   <img src='<?php echo base_url();?>assets/img/five_box.png' >
+              </div>
+              <h5>Fifteen Coin Box</h5>
+              <p>Box Hold 1JFK
+              <br/>
+              Half Dollar
+              <br/>
+              $3.95 each</p>
+              <select class='col-md-12'>
+                  <option>0</option>
+              </select>
+          </div>
+      </div>
+        <div class='clearfix'></div>
+        
+             
+      <div class="modal-footer text-center">
+          <div class="add2">
+          <input type="submit" class="addtocart" value=''/>
+      </div>
+          <div class="clearboth"></div>
+          <br/>
+               
+      <i class="grey_1 text-center"><a href="javascript:;" data-dismiss="modal" aria-hidden="true" style="float: none; ">No thanks continue to checkout</a></i>
+      </div>
+    </div>
+  </div>
+</div>

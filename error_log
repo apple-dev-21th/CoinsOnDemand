@@ -1,0 +1,183 @@
+[03-Dec-2014 09:58:47] coins/a1417622327.png
+[03-Dec-2014 10:01:48] coins/a1417622508.png
+[03-Dec-2014 10:06:30] coins/a1417622790.png
+[03-Dec-2014 10:06:51] coins/a1417622811.png
+[03-Dec-2014 10:14:19] coins/a1417623259.png
+[03-Dec-2014 10:15:37] coins/a1417623337.png
+[03-Dec-2014 10:37:24] coins/a1417624644.png
+[03-Dec-2014 10:37:49] coins/a1417624669.png
+[03-Dec-2014 10:40:40] coins/a1417624840.png
+[03-Dec-2014 10:54:00] coins/a1417625640.png
+[03-Dec-2014 10:54:02] coins/a1417625642.png
+[03-Dec-2014 10:56:03] coins/a1417625763.png
+[03-Dec-2014 10:56:57] coins/a1417625817.png
+[03-Dec-2014 10:58:41] coins/a1417625921.png
+[03-Dec-2014 10:59:37] coins/a1417625977.png
+[03-Dec-2014 11:00:07] coins/a1417626007.png
+[03-Dec-2014 11:05:02] coins/a1417626302.png
+[03-Dec-2014 11:05:45] coins/a1417626345.png
+[03-Dec-2014 11:06:23] coins/a1417626383.png
+[03-Dec-2014 11:09:26] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home4/north89/public_html/dev/authorize/anet_php_sdk/AuthorizeNet.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/controllers/review_order.php on line 176
+[03-Dec-2014 11:17:52] coins/a1417627072.png
+[03-Dec-2014 11:18:59] coins/a1417627139.png
+[03-Dec-2014 11:18:59] PHP Fatal error:  Uncaught exception 'ImagickException' with message 'no decode delegate for this image format `/tmp/magick-ixGZCRri' @ error/constitute.c/ReadImage/544' in /home4/north89/public_html/dev/personalized-coins/createcoin.php:47
+Stack trace:
+#0 /home4/north89/public_html/dev/personalized-coins/createcoin.php(47): Imagick->__construct('http://dev-serv...')
+#1 {main}
+  thrown in /home4/north89/public_html/dev/personalized-coins/createcoin.php on line 47
+[03-Dec-2014 11:31:21] coins/a1417627881.png
+[03-Dec-2014 11:34:53] PHP Warning:  imagepng() [<a href='function.imagepng'>function.imagepng</a>]: gd-png:  fatal libpng error: zlib failed to initialize compressor -- stream error in /home4/north89/public_html/dev/personalized-coins/createcoin.php on line 42
+[03-Dec-2014 11:34:53] PHP Warning:  imagepng() [<a href='function.imagepng'>function.imagepng</a>]: gd-png error: setjmp returns error condition in /home4/north89/public_html/dev/personalized-coins/createcoin.php on line 42
+[03-Dec-2014 11:34:53] coins/a1417628093.png
+[03-Dec-2014 11:34:53] PHP Fatal error:  Uncaught exception 'ImagickException' with message 'corrupt image `/tmp/magick-TSAQ7tEY' @ error/png.c/ReadPNGImage/3699' in /home4/north89/public_html/dev/personalized-coins/createcoin.php:53
+Stack trace:
+#0 /home4/north89/public_html/dev/personalized-coins/createcoin.php(53): Imagick->__construct('http://dev-serv...')
+#1 {main}
+  thrown in /home4/north89/public_html/dev/personalized-coins/createcoin.php on line 53
+[03-Dec-2014 11:37:13] coins/a1417628233.jpg
+[03-Dec-2014 11:59:54] coins/a1417629594.jpg
+[03-Dec-2014 12:04:37] coins/a1417629877.jpg
+[03-Dec-2014 12:05:50] coins/a1417629950.jpg
+[03-Dec-2014 12:07:28] coins/a1417630048.jpg
+[03-Dec-2014 12:12:18] coins/a1417630338.jpg
+[03-Dec-2014 12:40:07] coins/a1417632007.jpg
+[03-Dec-2014 12:44:47] coins/a1417632287.jpg
+[03-Dec-2014 12:48:48] coins/a1417632528.png
+[03-Dec-2014 12:55:25] coins/a1417632925.png
+[03-Dec-2014 12:59:54] coins/a1417633194.png
+[03-Dec-2014 13:00:01] coins/a1417633201.png
+[03-Dec-2014 13:00:15] coins/a1417633215.png
+[03-Dec-2014 13:01:28] coins/a1417633288.png
+[03-Dec-2014 13:04:39] coins/a1417633479.png
+[03-Dec-2014 13:06:54] coins/a1417633614.png
+[03-Dec-2014 13:12:39] coins/a1417633959.png
+[03-Dec-2014 13:50:53] coins/a1417636253.png
+[03-Dec-2014 13:54:38] coins/a1417636478.png
+[03-Dec-2014 14:02:27] coins/a1417636947.png
+[03-Dec-2014 14:08:34] coins/a1417637314.png
+[03-Dec-2014 14:53:49] coins/a1417640029.png
+[03-Dec-2014 15:06:21] coins/a1417640781.png
+[03-Dec-2014 15:49:34] coins/a1417643374.png
+[03-Dec-2014 16:08:54] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home4/north89/public_html/dev/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/models/pdf_model.php on line 8
+[04-Dec-2014 11:12:16] PHP Fatal error:  Call to undefined method CI_URI::segments() in /home4/north89/public_html/dev/personalized-coins/application/controllers/personalizedcoin.php on line 32
+[04-Dec-2014 11:17:44] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home4/north89/public_html/dev/personalized-coins/application/views/step1.php on line 18
+[04-Dec-2014 11:17:45] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home4/north89/public_html/dev/personalized-coins/application/views/step1.php on line 18
+[04-Dec-2014 11:50:14] coins/a1417715414.png
+[04-Dec-2014 12:10:17] coins/a1417716617.png
+[04-Dec-2014 12:12:57] coins/a1417716777.png
+[04-Dec-2014 12:13:22] coins/a1417716802.png
+[04-Dec-2014 12:13:36] coins/a1417716816.png
+[04-Dec-2014 12:14:22] coins/a1417716862.png
+[04-Dec-2014 12:15:28] coins/a1417716928.png
+[04-Dec-2014 12:27:06] PHP Fatal error:  Call to undefined method CI_URI::segments() in /home4/north89/public_html/dev/personalized-coins/application/views/step2.php on line 588
+[04-Dec-2014 12:27:07] PHP Fatal error:  Call to undefined method CI_URI::segments() in /home4/north89/public_html/dev/personalized-coins/application/views/step2.php on line 588
+[04-Dec-2014 12:32:20] coins/a1417717940.png
+[04-Dec-2014 12:36:50] coins/a1417718210.png
+[04-Dec-2014 12:43:36] coins/a1417718616.png
+[04-Dec-2014 13:43:01] coins/a1417722181.png
+[04-Dec-2014 13:46:05] coins/a1417722365.png
+[04-Dec-2014 13:54:00] coins/a1417722840.png
+[04-Dec-2014 13:55:20] coins/a1417722920.png
+[04-Dec-2014 13:57:46] coins/a1417723066.png
+[04-Dec-2014 14:02:04] coins/a1417723324.png
+[04-Dec-2014 14:15:35] coins/a1417724135.png
+[04-Dec-2014 14:33:32] coins/a1417725212.png
+[04-Dec-2014 14:34:01] coins/a1417725241.png
+[04-Dec-2014 14:49:25] coins/a1417726165.png
+[04-Dec-2014 14:55:09] coins/a1417726509.png
+[04-Dec-2014 15:01:59] coins/a1417726919.png
+[04-Dec-2014 15:02:24] coins/a1417726944.png
+[04-Dec-2014 15:03:00] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home4/north89/public_html/dev/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/models/pdf_model.php on line 8
+[04-Dec-2014 15:06:21] coins/a1417727181.png
+[04-Dec-2014 15:08:06] coins/a1417727286.png
+[04-Dec-2014 15:13:05] coins/a1417727585.png
+[04-Dec-2014 15:13:51] coins/a1417727631.png
+[04-Dec-2014 15:19:01] coins/a1417727941.png
+[04-Dec-2014 15:20:37] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home4/north89/public_html/dev/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/models/pdf_model.php on line 8
+[04-Dec-2014 15:20:57] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home4/north89/public_html/dev/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/models/pdf_model.php on line 8
+[04-Dec-2014 15:23:55] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home4/north89/public_html/dev/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/models/pdf_model.php on line 8
+[04-Dec-2014 15:41:24] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home4/north89/public_html/dev/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/models/pdf_model.php on line 8
+[04-Dec-2014 15:42:50] coins/a1417729370.png
+[04-Dec-2014 15:49:11] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home4/north89/public_html/dev/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/models/pdf_model.php on line 8
+[04-Dec-2014 15:51:01] coins/a1417729861.png
+[04-Dec-2014 15:54:49] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home4/north89/public_html/dev/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/controllers/checkout_complete.php on line 134
+[04-Dec-2014 16:16:17] coins/a1417731377.png
+[04-Dec-2014 16:17:59] coins/a1417731479.png
+[04-Dec-2014 16:18:49] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home4/north89/public_html/dev/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/controllers/checkout_complete.php on line 141
+[04-Dec-2014 16:19:07] coins/a1417731547.png
+[04-Dec-2014 16:19:57] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home4/north89/public_html/dev/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/controllers/checkout_complete.php on line 141
+[04-Dec-2014 16:20:14] coins/a1417731614.png
+[04-Dec-2014 16:22:30] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/controllers/checkout_complete.php on line 141
+[04-Dec-2014 16:23:33] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home4/north89/public_html/dev/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/controllers/checkout_complete.php on line 141
+[04-Dec-2014 16:26:18] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/public_html/dev/personalized-coins/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/controllers/checkout_complete.php on line 141
+[04-Dec-2014 16:27:50] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/public_html/personalized-coins/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/controllers/checkout_complete.php on line 141
+[04-Dec-2014 16:28:14] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/dev/personalized-coins/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/controllers/checkout_complete.php on line 141
+[04-Dec-2014 16:28:32] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/personalized-coins/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/controllers/checkout_complete.php on line 141
+[04-Dec-2014 16:35:23] PHP Fatal error:  Uncaught exception 'ImagickException' with message 'Unable to read the file: undefined' in /home4/north89/public_html/dev/personalized-coins/resize_and_crop_imagick.php:81
+Stack trace:
+#0 /home4/north89/public_html/dev/personalized-coins/resize_and_crop_imagick.php(81): Imagick->__construct('undefined')
+#1 {main}
+  thrown in /home4/north89/public_html/dev/personalized-coins/resize_and_crop_imagick.php on line 81
+[04-Dec-2014 16:35:24] coins/a1417732524.png
+[04-Dec-2014 16:52:28] coins/a1417733548.png
+[04-Dec-2014 16:53:08] coins/a1417733588.png
+[04-Dec-2014 17:13:41] PHP Fatal error:  Uncaught exception 'ImagickException' with message 'Unable to read the file: undefined' in /home4/north89/public_html/dev/personalized-coins/resize_and_crop_imagick.php:81
+Stack trace:
+#0 /home4/north89/public_html/dev/personalized-coins/resize_and_crop_imagick.php(81): Imagick->__construct('undefined')
+#1 {main}
+  thrown in /home4/north89/public_html/dev/personalized-coins/resize_and_crop_imagick.php on line 81
+[04-Dec-2014 17:13:42] coins/a1417734822.png
+[04-Dec-2014 17:14:23] coins/a1417734863.png
+[04-Dec-2014 17:27:19] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home4/north89/public_html/dev/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/models/pdf_model.php on line 8
+[04-Dec-2014 17:28:57] coins/a1417735737.png
+[04-Dec-2014 17:49:27] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home4/north89/public_html/dev/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/models/pdf_model.php on line 8
+[04-Dec-2014 17:52:18] coins/a1417737138.png
+[04-Dec-2014 17:53:02] coins/a1417737182.png
+[05-Dec-2014 08:50:53] coins/a1417791053.png
+[05-Dec-2014 08:52:52] coins/a1417791172.png
+[05-Dec-2014 08:53:42] coins/a1417791222.png
+[05-Dec-2014 09:37:00] coins/a1417793820.png
+[05-Dec-2014 09:37:10] coins/a1417793830.png
+[05-Dec-2014 09:38:22] coins/a1417793902.png
+[05-Dec-2014 09:51:12] coins/a1417794672.png
+[05-Dec-2014 09:51:13] coins/a1417794673.png
+[05-Dec-2014 11:42:55] PHP Parse error:  syntax error, unexpected $end in /home4/north89/public_html/dev/personalized-coins/application/models/category_model.php on line 204
+[05-Dec-2014 11:43:43] PHP Fatal error:  Uncaught exception 'ImagickException' with message 'Invalid image geometry' in /home4/north89/public_html/dev/personalized-coins/resize_and_crop_imagick.php:89
+Stack trace:
+#0 /home4/north89/public_html/dev/personalized-coins/resize_and_crop_imagick.php(89): Imagick->resizeimage(0, 0, 0, 1, false)
+#1 {main}
+  thrown in /home4/north89/public_html/dev/personalized-coins/resize_and_crop_imagick.php on line 89
+[05-Dec-2014 11:43:44] coins/a1417801424.png
+[05-Dec-2014 11:53:30] coins/a1417802010.png
+[05-Dec-2014 12:39:47] coins/a1417804787.png
+[05-Dec-2014 13:17:54] coins/a1417807074.png
+[05-Dec-2014 13:18:13] coins/a1417807093.png
+[05-Dec-2014 13:19:14] coins/a1417807154.png
+[05-Dec-2014 13:19:47] coins/a1417807187.png
+[05-Dec-2014 13:20:33] coins/a1417807233.png
+[05-Dec-2014 13:22:52] PHP Fatal error:  Uncaught exception 'ImagickException' with message 'Unable to read the file: undefined' in /home4/north89/public_html/dev/personalized-coins/resize_and_crop_imagick.php:81
+Stack trace:
+#0 /home4/north89/public_html/dev/personalized-coins/resize_and_crop_imagick.php(81): Imagick->__construct('undefined')
+#1 {main}
+  thrown in /home4/north89/public_html/dev/personalized-coins/resize_and_crop_imagick.php on line 81
+[05-Dec-2014 13:22:53] coins/a1417807373.png
+[05-Dec-2014 13:36:30] coins/a1417808190.png
+[05-Dec-2014 13:37:04] coins/a1417808224.png
+[05-Dec-2014 13:43:04] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home4/north89/public_html/dev/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/models/pdf_model.php on line 8
+[05-Dec-2014 13:43:19] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home4/north89/public_html/dev/application/libraries/tcpdf/tcpdf.php' (include_path='.:/opt/php52/lib/php') in /home4/north89/public_html/dev/personalized-coins/application/models/pdf_model.php on line 8
+[05-Dec-2014 14:05:42] PHP Fatal error:  Uncaught exception 'ImagickException' with message 'Unable to read the file: undefined' in /home4/north89/public_html/dev/personalized-coins/resize_and_crop_imagick.php:81
+Stack trace:
+#0 /home4/north89/public_html/dev/personalized-coins/resize_and_crop_imagick.php(81): Imagick->__construct('undefined')
+#1 {main}
+  thrown in /home4/north89/public_html/dev/personalized-coins/resize_and_crop_imagick.php on line 81
+[05-Dec-2014 14:05:45] coins/a1417809945.png
+[05-Dec-2014 14:08:16] coins/a1417810096.png
+[05-Dec-2014 14:08:17] PHP Fatal error:  Class 'Personlised_model' not found in /home4/north89/public_html/dev/personalized-coins/system/core/Loader.php on line 303
+[05-Dec-2014 14:08:17] PHP Fatal error:  Class 'Personlised_model' not found in /home4/north89/public_html/dev/personalized-coins/system/core/Loader.php on line 303
+[05-Dec-2014 14:32:52] coins/a1417811572.png
+[08-Dec-2014 08:53:28] coins/a1418050408.png
+[08-Dec-2014 08:54:32] coins/a1418050472.png
+[08-Dec-2014 08:59:58] coins/a1418050798.png
+[08-Dec-2014 09:40:10] coins/a1418053210.png
+[08-Dec-2014 09:40:32] coins/a1418053232.png
+[08-Dec-2014 09:41:07] coins/a1418053267.png

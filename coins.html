@@ -1,0 +1,422 @@
+<script>
+    function setCookie(cname, cvalue, exdays)
+    {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = cname + "=" + cvalue + "; " + expires + ';domain=personalizedcoins.com;path=/';
+    }
+</script>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <title>Coins</title>
+
+        <link href="http://personalizedcoins.com/assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="http://personalizedcoins.com/assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+        <link href="http://personalizedcoins.com/assets/css/style.css" rel="stylesheet" type="text/css">
+        <link href="http://personalizedcoins.com/assets/css/csphotoselector.css" rel="stylesheet" type="text/css"> 
+        <script type="text/javascript" src="http://personalizedcoins.com/assets/j/jquery.js" ></script> <!-- jQuery v1.7.1 jquery.com -->
+        <script type="text/javascript" src="http://tympanus.net/Development/Arctext/js/jquery.arctext.js"></script>
+
+<!--<script src="http://html2canvas.hertzen.com/build/html2canvas.js"></script>
+        -->
+
+        <script src="http://personalizedcoins.com/assets/j/html2canvas.js"></script>
+
+
+        <script>
+            function setCookie(cname, cvalue, exdays)
+            {
+                var d = new Date();
+                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                var expires = "expires=" + d.toGMTString();
+                document.cookie = cname + "=" + cvalue + "; " + expires + ';domain=personalizedcoins.com;path=/';
+            }
+        </script>
+        <script>
+            function createsession(id) {
+                $.ajax({
+                    type: "POST",
+                    url: 'http://personalizedcoins.com/select_template/createsession/',
+                    data: {cointemplate: id},
+                    success: function(data) {
+                        if (data == '1') {
+                            window.location.href = 'http://personalizedcoins.com/personlisedcoin/step1?template';
+                        }
+                    }
+                });
+            }
+        </script>
+        <script>
+            function getCookie(cname)
+            {
+                var name = cname + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++)
+                {
+                    var c = ca[i].trim();
+                    if (c.indexOf(name) == 0)
+                        return c.substring(name.length, c.length);
+                }
+                return "";
+            }
+            /* $(document).ready(function() {
+             var fbimg = getCookie('fbimg');
+             if (fbimg != '') { 
+             $.ajax({
+             type: "POST",
+             url: 'select_template/createimage/',
+             data: {image: fbimg},
+             success: function(data) {
+             //alert(data);
+             }
+             });
+             
+             }
+             });*/
+
+        </script>
+        <script type="text/javascript" src="http://personalizedcoins.com/assets/js/accordian.js"></script> 
+        <script type="text/javascript">
+            ddaccordion.init({
+                headerclass: "submenuheader", //Shared CSS class name of headers group
+                contentclass: "submenu", //Shared CSS class name of contents group
+                revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+                mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+                collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+                defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+                onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+                animatedefault: false, //Should contents open by default be animated into view?
+                persiststate: true, //persist state of opened contents within browser session?
+                toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+                //	togglehtml: ["suffix", "<img src='plus.gif' class='statusicon' />", "<img src='minus.gif' class='statusicon' />"], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+                animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+                oninit: function(headers, expandedindices) { //custom code to run when headers have initalized
+                    //do nothing
+
+                },
+                onopenclose: function(header, index, state, isuseractivated) { //custom code to run whenever a header is opened or closed
+                    //do nothing
+                }
+            })
+            $(".submenu.active").show();
+
+        </script> 
+
+        <script type="text/javascript" src="http://personalizedcoins.com/assets/js/bootstrap-filestyle.js"></script>
+        <script type="text/javascript" src="http://personalizedcoins.com/assets/j/jqueryui.js" ></script>
+        <script type="text/javascript" src="http://personalizedcoins.com/assets/j/jquery.mousewheel.min.js" ></script>
+        <script type="text/javascript" src="http://personalizedcoins.com/assets/j/jquery.iviewer.js" ></script> 
+
+        <link rel="stylesheet" href="http://personalizedcoins.com/assets/css/jquery.iviewer.css" />
+        <script src="http://personalizedcoins.com/assets/js/csphotoselector.js"></script>
+        <script src="http://personalizedcoins.com/assets/js/example.js"></script>
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({appId: '1459172494304874', cookie: true, status: true, xfbml: true, oauth: true});
+
+                FB.getLoginStatus(function(response) {
+                    if (response.authResponse) {
+                        $("#login-status").html("Logged in");
+                    } else {
+                        $("#login-status").html("Not logged in");
+                    }
+                });
+            };
+            (function(d) {
+                var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+                if (d.getElementById(id)) {
+                    return;
+                }
+                js = d.createElement('script');
+                js.id = id;
+                js.async = true;
+                js.src = "//connect.facebook.net/en_US/all.js";
+                ref.parentNode.insertBefore(js, ref);
+            }(document));
+        </script>
+        <!-- script for zoom and rotate
+        <script type="text/javascript" src="http://personalizedcoins.com/assets/js/script.js"></script>
+        <link href="http://personalizedcoins.com/assets/css/jquery.cropzoom.css" rel="stylesheet" type="text/css">
+        <link href="http://personalizedcoins.com/assets/css/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="http://personalizedcoins.com/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script type="text/javascript" src="http://personalizedcoins.com/assets/js/jquery.cropzoom.js"></script>
+
+       script for zoom and rotate end-->
+        <!-- Round Shape Text Jquery -->
+
+
+    </head>
+
+    <body>
+	<style>
+	.col-lg-9 {
+    width: 100%;
+}
+</style>
+
+        <header>
+            <div id="loader">
+                <img src="http://personalizedcoins.com/assets/images/10.gif" />
+            </div>
+            <div id="fb-root"></div>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-5"><div class="logo_outer"><h1 class="logo"> <a href="http://personalizedcoins.com/" ><img src="http://personalizedcoins.com/assets/img/logo.png" alt="" class="img-responsive"/> </a></h1></div></div>
+
+                    <div class="col-lg-7 pull-right">
+
+                        <div class="col-lg-5 pull-right">
+
+                            <form class="srch">
+
+                                <input type="text" name="" >
+                                <input type="submit" value="" >
+                            </form>
+
+
+
+
+                        </div>
+
+                            <div class="dropdown col-lg-6 pull-right">
+
+
+
+
+                                <div class="pull-right realtive">
+                                    <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html" class="grey_btn text-right">
+                                        <img src="http://personalizedcoins.com/assets/img/shopping.png" alt=""/> Cart <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                        <li><a href="#">first item</a></li>
+                                        <li><a href="#">Second item</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="pull-right realtive">
+                                    <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html" class=" grey_btn">
+                                        My Account <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                        <li><a href="http://personalizedcoins.com/viewmyorder">View my Orders</a></li>
+                                        <li><a href="http://personalizedcoins.com/myprofile">My Profile</a></li>
+                                        <li><a href="http://personalizedcoins.com/manageaddress">Manage Addresses</a></li>
+                                        <li><a href="http://personalizedcoins.com/signin/logout">Sign out</a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4"></div>
+
+                    <div class="col-lg-8">
+
+                        <ul class="nav nav-pills custom_nav">
+                            <li><a href="http://personalizedcoins.com/home">Home</a></li>
+                            <li><a href="http://personalizedcoins.com/about">About</a></li>
+                            <li><a href="http://personalizedcoins.com/coins">Coins</a></li>
+                            <li><a href="http://personalizedcoins.com/goldcards">Gold Cards</a></li>
+                            <li><a href="http://personalizedcoins.com/pricing">Pricing</a></li>        
+                            <li><a href="http://personalizedcoins.com/faq">FAQ</a></li>
+                            <li><a href="http://personalizedcoins.com/contactus">Contact Us</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </header>
+        <div class="outer_border"><div class="multi_color_bg"></div></div>
+      <div class="container white padding_30">
+          <div class="row">
+                <div class="col-lg-9 col-md-9 col-xs-9">
+                      <div class="glossymenu"> 
+                      <div class="clearfix"></div>
+                      <div class="row">
+                      	<div class="col-md-4 col-sm-4 col-xs-4 text-center coins_cat">
+                        	<div class="coin_img"><img src="http://personalizedcoins.com/coins/1394198595.png" alt=""></div>
+                            
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 text-center coins_cat">
+                        	<div class="coin_img"><img src="http://personalizedcoins.com/coins/1394198354.png" alt=""></div>
+                            
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 text-center coins_cat">
+                        	<div class="coin_img"><img src="http://personalizedcoins.com/coins/1394197600.png" alt=""></div>
+                           
+                        </div>
+                      </div>
+                      <div class="row margin_top_15">
+                      	<div class="col-md-4 col-sm-4 col-xs-4 text-center coins_cat">
+                        	<div class="coin_img"><img src="http://personalizedcoins.com/coins/1394197572.png" alt=""></div>
+                            
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 text-center coins_cat">
+                        	<div class="coin_img"><img src="http://personalizedcoins.com/coins/1394196479.png" alt=""></div>
+                            
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 text-center coins_cat">
+                        	<div class="coin_img"><img src="http://personalizedcoins.com/coins/1394196430.png" alt=""></div>
+                            
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                      <!--<ul class="pagination pull-right">
+                    <li><a href="#">«</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">»</a></li>
+                    </ul>-->
+                </div>
+            </div>
+    <div class="col-lg-3 col-md-3 col-xs-3">
+              
+            </div>
+  </div>
+        </div>
+
+       
+
+
+<script type="text/javascript">
+    function validateForm()
+    {
+if($("#tandc").prop('checked') == false){
+    alert("Kindly read the and accept Term and conditions");
+    return false;
+}
+if($("#designapprove").prop('checked') == false){
+    alert("Kindly approve your design ");
+    return false;
+}
+    }
+    </script>        
+
+<footer>
+
+    <div class="container">
+        <div class="col-lg-4">
+            <div class="footer_logo">
+                <img src="http://personalizedcoins.com/assets/img/footer_logo.png" alt=""/>
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-8">
+
+            <ul class="nav  nav-pills smtp" >
+                <li><a href="http://personalizedcoins.com/home">Home</a></li>
+                <li><a href="http://personalizedcoins.com/about">About</a></li>
+                <li><a href="http://personalizedcoins.com/coins">Coins</a></li>
+                <li><a href="http://personalizedcoins.com/goldcards">Gold Cards </a></li>
+                <li><a href="http://personalizedcoins.com/pricing">Pricing</a></li>
+                <li><a href="http://personalizedcoins.com/faq">FAQ</a></li>
+                <li><a href="http://personalizedcoins.com/contactus"> Contact Us</a></li>
+            </ul>
+
+            <ul class="nav  nav-pills">
+                <li><a href="http://personalizedcoins.com/privacypolicy">Privacy Policy </a></li>
+                <li><a href="http://personalizedcoins.com/shippingpolicy">Shipping Policy</a></li>
+                <li><a href="http://personalizedcoins.com/termandcondition">Terms & Conditions </a></li>
+            </ul>
+
+        </div>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="col-lg-12">
+                <small> &copy;ecoins.com Inc. eCoins and its subsidiaries are not affiliated with the U.S.Mint or any goverment agency.</small>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+<script src="http://personalizedcoins.com/assets/js/jquery.js"></script>
+<script src="http://personalizedcoins.com/assets/js/bootstrap.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function(e) {
+        if ($(".item:last-child").hasClass('active')) {
+            $('.carousel').carousel(1);
+        }
+    });
+</script>
+<script type="text/javascript">
+    $.noConflict();
+    $(document).ready(function(e) {
+        // $(":file").filestyle({buttonText: ""});
+    });
+    // $("a").removeClass("active");
+    $(document).ready(function() {
+        $(document).ajaxStart(function() {
+            $(" #loader").show();
+        }).ajaxStop(function() {
+            $(" #loader").hide();
+        });
+    });
+
+</script>
+<!-- <script type="text/javascript">
+    var $ = jQuery;
+    $(document).ready(function() {
+        var iv1 = $("#viewer").iviewer({
+            src: "j/test_image.jpg",
+            update_on_resize: false,
+            zoom_animation: false,
+            mousewheel: false,
+            onMouseMove: function(ev, coords) {
+            },
+            onStartDrag: function(ev, coords) {
+                return false;
+            }, //this image will not be dragged
+            onDrag: function(ev, coords) {
+            }
+        });
+
+        $("#in").click(function() {
+            iv1.iviewer('zoom_by', 1);
+        });
+        $("#out").click(function() {
+            iv1.iviewer('zoom_by', -1);
+        });
+        $("#fit").click(function() {
+            iv1.iviewer('fit');
+        });
+        $("#orig").click(function() {
+            iv1.iviewer('set_zoom', 100);
+        });
+        $("#update").click(function() {
+            iv1.iviewer('update_container_info');
+        });
+
+
+
+
+    });
+</script> -->
+
+
+</body>
+</html>
+    
+       
